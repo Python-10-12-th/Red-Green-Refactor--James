@@ -18,5 +18,9 @@ def convert_roman_numerals(s):
             if i > 0 and s[i - 1] == "I":  
                 continue  
             count += 10
+        elif s[i] == "L":
+            if i > 0 and s[i - 1] == "I":  
+                continue  
+            count += 50
 
     return count
