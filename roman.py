@@ -6,6 +6,9 @@ def convert_roman_numerals(s):
             if i + 1 < len(s) and s[i + 1] == "V":
                 count += 4
                 continue
+            if i + 1 < len(s) and s[i + 1] == "X":
+                count += 9
+                continue
             count += 1
         elif s[i] == "V":
             if i > 0 and s[i - 1] == "I":  
