@@ -22,6 +22,8 @@ class TestRoman(unittest.TestCase):
           self.assertEqual(convert_roman_numerals("D"),  500)
     def test_XC(self):
           self.assertEqual(convert_roman_numerals("XC"),  90)
+    def test_CD(self):
+        self.assertEqual(convert_roman_numerals("CD"),  400)
         
     
         

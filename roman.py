@@ -26,11 +26,14 @@ def convert_roman_numerals(s):
                 continue  
             count += 50
         elif s[i] == "C":
-             if i > 0 and s[i - 1] == "X":
-                 continue  
-             count += 100
+            if i + 1 < len(s) and s[i + 1] == "D":
+                count += 400
+                continue  
+            if i > 0 and s[i - 1] == "X":  
+                continue  
+            count += 100
         elif s[i] == "D":
-            if i > 0 and s[i - 1] == "X":
+            if i > 0 and s[i - 1] == "C":
                 continue  
             count += 500
              
