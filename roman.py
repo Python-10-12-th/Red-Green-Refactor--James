@@ -15,8 +15,11 @@ def convert_roman_numerals(s):
                 continue  
             count += 5
         elif s[i] == "X":
-            if i > 0 and s[i - 1] == "I":  
+            if i + 1 < len(s) and s[i + 1] == "C":
+                count += 90
                 continue  
+            if i > 0 and s[i - 1] == "I":  
+                continue        
             count += 10
         elif s[i] == "L":
             if i > 0 and s[i - 1] == "I":  
