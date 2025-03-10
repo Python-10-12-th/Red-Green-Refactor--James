@@ -16,6 +16,8 @@ class TestRoman(unittest.TestCase):
         self.assertEqual(convert_roman_numerals("IX"),  9)
     def test_L(self):
         self.assertEqual(convert_roman_numerals("L"),  50)
+    def test_C(self):
+          self.assertEqual(convert_roman_numerals("C"),  100)
    
 
 
